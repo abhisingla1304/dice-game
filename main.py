@@ -7,6 +7,7 @@ while True:
     print("5. Dice Roller (Single Player - Streak Mode)")
     print("0. Exit")
 
+# We can enter the choices according to us, then output will be according to it
     choice = input("\nEnter choice: ")
 
     if choice == '2':
