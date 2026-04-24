@@ -10,14 +10,16 @@ while True:
     choice = input("\nEnter choice: ")
 
     if choice == '2':
-        try:
-            count = int(input("Enter number of players: "))
-            if count < 1:
-                print("You need at least 1 player!")
+        while True:
+            count = input("Enter number of players: ").strip()
+
+            if count.isdigit() and int(count) >= 1:
+                count = int(count)
+                break
             else:
-                play_round(count)
-        except ValueError:
-            print("Invalid input! Please enter a number.")
+                print("Invalid input! Enter a valid number.")
+
+        play_round(count)
 
     elif choice == '5':
         roll_dice()

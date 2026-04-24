@@ -18,5 +18,5 @@ def roll_dice():
         if result == 6:
             print("🔥 LUCKY SIX! Roll again!")
         else:
-            print("Game Over!")
+            print("Game Over!!")
             break

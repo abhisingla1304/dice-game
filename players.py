@@ -25,5 +25,5 @@ def play_round(num_players):
     # agar game dobara khelni hai toh uske liye this is the line
         again = input("\nPlay Again? (y/n): ").lower()
         if again != 'y':
-            print("Returning to Main Menu...")
+            print("Returning, Now you can play again...")
             break
